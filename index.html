@@ -1,303 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UAM KOREA — 도심항공교통 전문기업</title>
-<meta name="description" content="UAM KOREA(㈜에르자인)는 UAM 운항·운송사업을 중심으로 응급이송(EMS), 산불 감시·진화, 도서·오지 항공지원, 관제·안전 솔루션, 버티포트, 교육까지 도심항공교통의 전 주기를 다루는 전문기업입니다.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A1E3C'/%3E%3Cpath d='M16 5 L27 27 L16 21 L5 27 Z' fill='%23FF5A1F'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UAM KOREA | ㈜에어엑스 UAM 사업부문 · 안전 연구와 실증 준비</title>
+<meta name="description" content="UAM KOREA는 ㈜에어엑스의 UAM 사업부문입니다. 안전 인텔리전스 연구를 기반으로 UAM-EMS, 산불 감시, 도서·오지 항공지원의 운항개념과 실증을 준비합니다.">
+<meta name="theme-color" content="#0a1e3c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UAM KOREA — 안전한 하늘길, 연구에서 실증 준비까지">
+<meta property="og:description" content="㈜에어엑스 UAM 사업부문 | Safety Intelligence · 공공 임무 · 2027 실증 준비">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a1e3c'/%3E%3Cpath d='M16 5 27 27 16 21 5 27Z' fill='%23ff5a1f'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#0a1e3c;--deep:#071528;--orange:#ff5a1f;--ink:#162435;--muted:#586473;--line:#dce1e6;--paper:#f5f5f1;--white:#fff;--width:1184px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;color:var(--ink);background:#fff;font-family:"Apple SD Gothic Neo","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}button,a,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img{max-width:100%;display:block}h1,h2,h3,p,figure{margin:0}ul,ol{margin:0;padding:0;list-style:none}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:5px}.wrap{width:min(calc(100% - 80px),var(--width));margin-inline:auto}.skip{position:fixed;top:-80px;left:20px;z-index:500;background:#fff;padding:12px 20px}.skip:focus{top:8px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.18em;text-transform:uppercase;color:#b53a0e;margin-bottom:20px}.dark .eyebrow{color:#ff956b}.section{padding:112px 0}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:52px}h2{font-size:clamp(30px,3.35vw,44px);line-height:1.32;letter-spacing:-.045em;font-weight:750}.section-intro{max-width:480px;font-size:16px;color:var(--muted);line-height:1.9}.arrow{font-family:Arial,sans-serif;display:inline-block;margin-left:22px;font-weight:400}.pill{display:inline-block;border:1px solid currentColor;font-size:11px;letter-spacing:.02em;line-height:1.4;padding:5px 10px;white-space:nowrap}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;padding:16px 24px;font-weight:650;font-size:15px;min-height:56px;border:1px solid transparent;transition:background .18s,color .18s}.button.primary{background:var(--orange);color:#fff}.button.primary:hover{background:#cf3d09}.button.outline{border-color:#a9b4c2;color:#fff}.button.outline:hover{background:#fff;color:var(--navy)}.inline-link{font-size:14px;font-weight:650;border-bottom:1px solid currentColor;padding-bottom:5px;display:inline-flex;align-items:center;gap:24px}
+/* Brand and navigation */
+.header{position:fixed;inset:0 0 auto;z-index:100;background:#fff;border-bottom:1px solid var(--line)}.header-inner{height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;line-height:1;flex-shrink:0}.brand svg{width:28px;height:30px}.brand-word{font-size:21px;letter-spacing:.015em;white-space:nowrap}.brand-word b{font-weight:800}.brand-word span{font-weight:350}.brand-tag{font-size:10px;font-weight:500;letter-spacing:0;color:var(--muted);margin-top:8px;display:block}.nav{display:flex;align-items:center;gap:27px}.nav a{font-size:13px;font-weight:600;white-space:nowrap}.nav a:hover{color:#b53a0e}.nav .contact-link{background:var(--navy);color:#fff;padding:10px 16px}.nav .contact-link:hover{background:var(--orange);color:#fff}.menu{display:none;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);background:#fff;position:relative}.menu span,.menu span::before,.menu span::after{position:absolute;width:20px;height:1.5px;background:var(--navy);content:"";transition:transform .15s}.menu span::before{transform:translateY(-6px);left:0}.menu span::after{transform:translateY(6px);left:0}.menu[aria-expanded="true"] span{background:transparent}.menu[aria-expanded="true"] span::before{transform:rotate(45deg)}.menu[aria-expanded="true"] span::after{transform:rotate(-45deg)}
+/* Opening */
+.hero{position:relative;display:flex;align-items:center;min-height:780px;min-height:min(900px,100svh);padding:160px 0 115px;margin-top:80px;background:var(--deep);color:#fff;isolation:isolate;overflow:hidden}.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 45%;z-index:-3}.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(4,17,36,.93) 0%,rgba(4,17,36,.8) 38%,rgba(4,17,36,.17) 100%)}.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(5,18,36,.56),transparent 50%)}.hero .eyebrow{color:#ff9d76;font-size:12px;letter-spacing:.19em;display:flex;align-items:center;gap:14px}.hero .eyebrow::before{content:"";width:26px;height:1px;background:var(--orange)}.hero h1{font-size:clamp(36px,5.05vw,68px);letter-spacing:-.045em;line-height:1.23;font-weight:750;max-width:900px;margin-bottom:26px}.hero-sub{font-size:17px;font-weight:400;line-height:1.95;color:#e1e6ee;max-width:630px;margin-bottom:35px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{margin-top:25px;display:flex;align-items:center;gap:10px;color:#d6dfeb;font-size:12px}.status-dot{width:6px;height:6px;border-radius:100%;background:#ff9b73;display:inline-block}.hero-bottom{position:absolute;left:0;right:0;bottom:24px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.13em;color:#d3d9e3}.hero-bottom p{letter-spacing:0;font-size:11px}.focus-strip{background:var(--navy);color:#fff}.focus-list{display:grid;grid-template-columns:repeat(3,1fr);padding:29px 0}.focus-list li{display:grid;grid-template-columns:32px 1fr;gap:12px;padding:4px 28px;border-right:1px solid #32455e}.focus-list li:first-child{padding-left:0}.focus-list li:last-child{border:0}.focus-list .index{font-size:11px;color:#ff996e;padding-top:5px}.focus-list strong{font-weight:650;font-size:17px;display:block}.focus-list small{font-size:12px;color:#b6c1d1;display:block;margin-top:2px}
+/* Team */
+.about-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:100px}.about-copy p{color:var(--muted);margin-top:23px;font-size:16px;line-height:1.95}.about-copy .lead{font-size:20px;font-weight:600;color:var(--ink);line-height:1.65}.facts{border-top:2px solid var(--navy);margin:0}.facts>div{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);font-size:14px}.facts dt{font-weight:700}.facts dd{margin:0;color:var(--muted)}.about-end{margin-top:56px;display:flex;align-items:center;justify-content:space-between;padding-top:25px;border-top:1px solid var(--line);gap:20px}.about-end p{font-size:14px;color:var(--muted)}
+/* Mission design */
+.missions{background:var(--paper)}.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.mission{border-top:2px solid var(--navy);display:flex;flex-direction:column}.mission-top{display:flex;align-items:center;justify-content:space-between;padding:21px 0 38px;color:var(--muted);font-size:11px;letter-spacing:.08em}.mission-top strong{color:#b53a0e;font-size:13px}.mission h3{font-size:26px;letter-spacing:-.035em;line-height:1.4;margin-bottom:16px}.mission>p{color:var(--muted);font-size:14px;line-height:1.9;min-height:110px;margin-bottom:26px}.mission details{border-top:1px solid #cfd5d8;margin-top:auto}.mission summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:650;cursor:pointer;padding:17px 0;gap:15px}.mission summary::-webkit-details-marker{display:none}.mission summary::after{content:"+";font-size:22px;font-weight:300;color:#b53a0e}.mission details[open] summary::after{content:"−"}.mission details ul{font-size:13px;color:var(--muted);line-height:1.85;margin-bottom:22px}.mission details li{padding-left:13px;position:relative;margin-bottom:8px}.mission details li::before{content:"";position:absolute;top:10px;left:0;width:3px;height:3px;background:#af390d}.mission-bottom{margin-top:48px;border-top:1px solid #cfd5d8;padding-top:23px;display:flex;gap:30px;font-size:13px;align-items:start}.mission-bottom b{flex-shrink:0;color:var(--navy)}.mission-bottom p{color:var(--muted);max-width:790px}
+/* Research */
+.research{background:var(--deep);color:#fff}.research .section-intro{color:#b5c0d1}.research-feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}.research-image img{width:100%;height:370px;object-fit:cover}.research-image figcaption{color:#a7b7ca;font-size:11px;margin-top:12px}.research-topline{font-size:12px;color:#ff9d76;margin-bottom:15px;letter-spacing:.04em}.research-feature h3{font-size:28px;letter-spacing:-.035em;line-height:1.45;margin-bottom:17px}.research-feature .body{font-size:15px;color:#c5cfdd;line-height:1.9}.research-list{margin-top:25px}.research-list li{padding:16px 0;border-top:1px solid #324154;display:grid;grid-template-columns:27px 1fr;gap:10px}.research-list .n{font-size:11px;color:#ff9d76;padding-top:3px}.research-list strong{font-size:14px;font-weight:650;display:block;margin-bottom:4px}.research-list p{font-size:12px;color:#afbdd0;line-height:1.8}.research-support{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:62px;padding-top:30px;border-top:1px solid #324154}.research-support h3{font-size:18px;margin-bottom:12px}.research-support p{color:#b5c0d1;font-size:13px;line-height:1.9}.research-support .small-label{font-size:10px;letter-spacing:.12em;color:#ff9d76;display:block;margin-bottom:10px}.role-note{margin-top:28px;font-size:11px;color:#b4c0d1;line-height:1.8;padding-left:14px;border-left:2px solid #cf623b}
+/* Roadmap */
+.roadmap-heading{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.roadmap-heading .pill{color:#8c390e}.road-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.road-grid li{border-top:2px solid var(--navy);padding-top:21px;position:relative}.road-grid li::before{content:"";position:absolute;left:0;top:-5px;width:8px;height:8px;background:var(--orange)}.quarter{font-size:12px;color:#ac370c;letter-spacing:.06em;display:block;margin-bottom:21px;font-weight:650}.road-grid h3{font-size:20px;line-height:1.45;margin-bottom:17px;letter-spacing:-.03em}.road-grid p{font-size:13px;color:var(--muted);line-height:1.9}.road-deliver{margin-top:23px;border-top:1px solid var(--line);padding-top:13px;font-size:11px;color:var(--muted)}.road-deliver b{display:block;color:var(--navy);font-size:11px;margin-bottom:4px}.road-note{font-size:12px;color:var(--muted);margin-top:28px}.future{margin-top:52px;display:grid;grid-template-columns:170px 1fr;gap:30px;background:var(--paper);padding:28px 32px}.future b{font-size:13px}.future p{font-size:13px;color:var(--muted);line-height:1.85}
+/* Evidence */
+.history{background:var(--paper)}.history-list{border-top:2px solid var(--navy)}.history-list li{display:grid;grid-template-columns:160px 1fr 86px;gap:30px;align-items:start;padding:27px 0;border-bottom:1px solid #d4d9dc}.history-list time{font-size:14px;font-weight:650;color:var(--navy)}.history-list h3{font-size:17px;letter-spacing:-.02em;margin-bottom:7px}.history-list p{font-size:13px;color:var(--muted)}.history-list .type{font-size:10px;color:var(--muted);border:1px solid #a9b1ba;padding:5px 8px;text-align:center}.history-note{font-size:11px;color:var(--muted);margin-top:22px}
+/* Contact */
+.contact{background:var(--navy);color:#fff}.contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:85px}.contact h2{max-width:620px}.contact-text{color:#c0cbd9;margin-top:25px;font-size:15px;line-height:1.9;max-width:580px}.contact-topics{margin-top:35px;display:flex;flex-direction:column;border-top:1px solid #3e5068;max-width:540px}.contact-topics a{padding:17px 0;border-bottom:1px solid #3e5068;display:flex;justify-content:space-between;font-size:14px;align-items:center}.contact-topics a:hover{color:#ffac89}.contact-topics a span:first-child{color:#b8c6d8;margin-right:20px;font-size:10px}.contact .facts{border-color:#ff8658;margin-top:10px}.contact .facts>div{border-color:#3e5068;grid-template-columns:83px 1fr;font-size:13px;gap:15px}.contact .facts dd{color:#d4dce8}.contact .facts a{display:inline-block}.contact .facts a:hover{text-decoration:underline;text-underline-offset:4px}.contact small{font-size:11px;color:#bdc9d9;display:block}.contact .email-hint{font-size:11px;color:#b8c6d8;margin-top:14px}.footer{background:var(--deep);color:#aab8ca;padding:35px 0}.footer-inner{display:flex;justify-content:space-between;gap:40px;align-items:start}.footer .brand{color:#fff;margin-bottom:18px}.footer p{font-size:11px;line-height:1.9}.footer .back{font-size:11px;color:#d4dce6;white-space:nowrap}.footer .copyright{margin-top:10px;color:#9eafc4}
+@media(min-width:1600px){.hero{min-height:840px}.hero-image{object-position:center 46%}}
+@media(max-width:1100px){.nav{gap:18px}.nav a{font-size:12px}.brand-word{font-size:19px}.about-grid,.contact-grid{gap:50px}.research-feature,.research-support{gap:36px}}
+@media(max-width:900px){.wrap{width:calc(100% - 48px)}.header-inner{height:72px}.hero{margin-top:72px;min-height:750px;padding-top:120px}.menu{display:flex}.nav{position:absolute;left:0;right:0;top:72px;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:16px 24px 24px;border-bottom:1px solid var(--line);display:none;max-height:calc(100svh - 72px);overflow:auto}.header[data-open="true"] .nav{display:flex}.nav a{font-size:15px;padding:15px 5px;border-bottom:1px solid var(--line)}.nav .contact-link{padding:14px 16px;margin-top:14px}.section{padding:80px 0}.section-head{grid-template-columns:1fr;gap:24px;margin-bottom:38px}.section-intro{max-width:640px}.about-grid,.research-feature,.contact-grid{grid-template-columns:1fr;gap:40px}.about-copy{max-width:650px}.about-end{align-items:start}.mission-grid{gap:22px}.mission h3{font-size:23px}.mission>p{font-size:13px;min-height:150px}.research-image img{height:380px}.research-support{gap:32px}.road-grid{grid-template-columns:1fr 1fr;gap:38px 30px}.history-list li{grid-template-columns:130px 1fr 75px;gap:20px}.contact .facts{margin-top:0}.hero h1{font-size:52px}.hero-sub{font-size:16px;max-width:570px}.hero-image{object-position:65% center}}
+@media(max-width:600px){html{scroll-padding-top:84px}.wrap{width:calc(100% - 40px)}.brand-word{font-size:18px}.brand-tag{font-size:9px;margin-top:7px}.brand svg{width:25px;height:28px}.hero{min-height:770px;padding:87px 0 110px;align-items:start}.hero h1{font-size:38px;line-height:1.3;letter-spacing:-.055em;margin-bottom:22px}.hero .eyebrow{font-size:9px;letter-spacing:.13em;margin-bottom:27px;gap:10px}.hero .eyebrow::before{width:18px}.hero-sub{font-size:14px;line-height:1.95;margin-bottom:27px;max-width:420px}.hero::before{background:linear-gradient(90deg,rgba(4,17,36,.92),rgba(4,17,36,.52))}.hero-image{object-position:63% center}.hero-actions{gap:10px}.button{padding:14px 17px;gap:14px;font-size:13px;min-height:50px}.hero-note{font-size:11px;margin-top:21px}.hero-bottom{bottom:22px;display:block}.hero-bottom>span{display:none}.hero-bottom p{font-size:9px}.focus-list{padding:20px 0;grid-template-columns:1fr}.focus-list li{padding:16px 0;border-right:0;border-bottom:1px solid #32455e;grid-template-columns:26px 1fr;gap:12px}.focus-list li:first-child{padding-top:5px}.focus-list li:last-child{padding-bottom:5px}.focus-list strong{font-size:15px}.focus-list small{font-size:11px}.section{padding:66px 0}.eyebrow{font-size:10px;margin-bottom:15px}h2{font-size:30px;line-height:1.4;letter-spacing:-.05em}.section-intro{font-size:14px;line-height:1.9}.about-grid{gap:32px}.about-copy .lead{font-size:18px}.about-copy p{font-size:14px;margin-top:18px}.facts>div{grid-template-columns:72px 1fr;gap:15px;padding:17px 0;font-size:12px}.about-end{flex-direction:column;gap:24px;margin-top:34px;padding-top:21px}.about-end p{font-size:12px}.inline-link{font-size:12px}.mission-grid{grid-template-columns:1fr;gap:28px}.mission-top{padding:18px 0 20px}.mission h3{font-size:25px}.mission>p{min-height:0;font-size:14px;margin-bottom:20px}.mission summary{font-size:12px}.mission details ul{font-size:12px}.mission-bottom{display:block;margin-top:30px}.mission-bottom b{display:block;margin-bottom:12px;font-size:12px}.mission-bottom p{font-size:12px}.research-feature{gap:30px}.research-image img{height:240px}.research-image figcaption{font-size:10px}.research-feature h3{font-size:24px}.research-feature .body{font-size:14px}.research-support{grid-template-columns:1fr;gap:30px;margin-top:38px;padding-top:26px}.research-support h3{font-size:17px}.role-note{font-size:10px;margin-top:24px}.road-grid{grid-template-columns:1fr;gap:29px}.road-grid li{padding-top:19px}.quarter{margin-bottom:12px}.road-grid h3{font-size:21px;margin-bottom:12px}.road-deliver{margin-top:16px}.road-note{font-size:11px;line-height:1.8}.future{grid-template-columns:1fr;gap:10px;padding:23px;margin-top:30px}.future p{font-size:12px}.history-list li{grid-template-columns:1fr;gap:10px;padding:23px 0}.history-list time{font-size:12px}.history-list h3{font-size:16px;line-height:1.6}.history-list p{font-size:12px}.history-list .type{width:fit-content;font-size:9px;grid-row:1;grid-column:1;justify-self:end}.history-list time{grid-row:1;grid-column:1}.history-list>li>div{grid-column:1/-1}.history-note{font-size:10px;line-height:1.8}.contact-grid{gap:36px}.contact-text{font-size:14px;margin-top:20px}.contact-topics{margin-top:26px}.contact-topics a{font-size:13px}.contact-topics a span:first-child{margin-right:12px}.contact .facts>div{grid-template-columns:70px 1fr;font-size:12px}.contact small{font-size:10px}.footer-inner{gap:20px}.footer p{font-size:10px}.footer .back{font-size:10px}.footer .brand{gap:8px}.footer .brand-word{font-size:16px}.footer .brand svg{width:22px}.footer{padding:30px 0}}
+@media(max-width:360px){.hero h1{font-size:34px}.hero{min-height:800px}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions a{justify-content:center}.hero-note{font-size:10px}.brand-word{font-size:16px}.wrap{width:calc(100% - 36px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.header,.hero-actions,.menu,.contact-topics,.back{display:none}.hero{margin-top:0;min-height:0;padding:60px 0;background:var(--navy)!important;print-color-adjust:exact}.hero h1{font-size:36px}.hero-bottom{display:none}.section{padding:45px 0}.wrap{width:94%}.mission-grid,.road-grid{gap:20px}.mission,.road-grid li,.history-list li{break-inside:avoid}.dark{print-color-adjust:exact}details>*{display:block}h2{font-size:28px}}
+</style>
 </head>
 <body>
-
-<!-- ===== Header ===== -->
-<header class="site-header" id="siteHeader">
-  <div class="wrap header-inner">
-    <a href="#top" class="logo">
-      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" fill="#0A1E3C"/><path d="M16 5 L27 27 L16 21 L5 27 Z" fill="#FF5A1F"/></svg>
-      <span>UAM&nbsp;<b>KOREA</b></span>
-    </a>
-    <nav class="gnb" id="gnb">
-      <a href="#about">회사소개</a>
-      <a href="#business">사업영역</a>
-      <a href="#projects">주요실적</a>
-      <a href="#roadmap">비전</a>
-      <a href="#contact" class="nav-cta">문의하기</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기"><span></span><span></span></button>
-  </div>
+<a href="#main" class="skip">본문으로 바로가기</a>
+<header class="header" id="siteHeader">
+ <div class="wrap header-inner">
+  <a class="brand" href="#top" aria-label="UAM KOREA 첫 화면"><svg viewBox="0 0 32 34" aria-hidden="true"><path fill="#ff5a1f" d="M16 2 30 32 16 24 2 32Z"/></svg><div class="brand-word"><span>UAM</span> <b>KOREA</b><small class="brand-tag">㈜에어엑스 UAM 사업부문</small></div></a>
+  <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="gnb" aria-label="메뉴 열기"><span></span></button>
+  <nav class="nav" id="gnb" aria-label="주요 메뉴"><a href="#about">팀 소개</a><a href="#missions">운항·공공 임무</a><a href="#research">안전 연구</a><a href="#roadmap">2027 로드맵</a><a href="#history">연구 기반</a><a class="contact-link" href="#contact">협력 문의 <span aria-hidden="true">↗</span></a></nav>
+ </div>
 </header>
-
-<!-- ===== Hero ===== -->
-<section class="hero" id="top">
-  <div class="hero-bg" style="background-image:url('img/hero.jpg')"></div>
-  <div class="hero-scrim"></div>
-  <div class="wrap hero-inner">
-    <p class="hero-kicker">URBAN AIR MOBILITY · KOREA</p>
-    <h1>하늘 위의 도로를<br>직접 운항합니다</h1>
-    <p class="hero-sub">UAM KOREA는 UAM 운항·운송사업을 중심으로 응급이송(EMS)과 산불 대응, <br class="pc-only">관제·안전관리, 버티포트까지 도심항공교통(UAM)의 전 주기를 다루는 전문기업입니다.</p>
-    <div class="hero-actions">
-      <a href="#business" class="btn btn-accent">사업영역 보기</a>
-      <a href="#contact" class="btn btn-line">협력 문의</a>
-    </div>
-  </div>
-  <div class="hero-scroll" aria-hidden="true"><span></span>SCROLL</div>
-</section>
-
-<!-- ===== 핵심 지표 ===== -->
-<section class="stats">
-  <div class="wrap stats-grid">
-    <div class="stat reveal">
-      <em>730<small>조</small></em>
-      <p>2040년 세계 UAM<br>시장 규모 전망</p>
-    </div>
-    <div class="stat reveal">
-      <em>2025</em>
-      <p>K-UAM 상용화 원년,<br>도심항공교통법 시행</p>
-    </div>
-    <div class="stat reveal">
-      <em>5<small>개</small></em>
-      <p>운항·EMS·관제·버티포트·교육<br>전 주기 사업영역</p>
-    </div>
-    <div class="stat reveal">
-      <em>10<small>년+</small></em>
-      <p>현직 기장·박사 연구진의<br>항공 운항 전문성</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== About ===== -->
-<section class="about" id="about">
+<main id="main">
+ <section class="hero" id="top" aria-labelledby="hero-title">
+  <img class="hero-image" src="img/hero.jpg" alt="도시 상공에서 운용되는 UAM의 미래 콘셉트" width="1600" height="900" fetchpriority="high">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="sec-kicker">ABOUT US</p>
-      <h2>도심의 3차원 공간을<br>직접 운항하는 UAM 전문기업</h2>
-    </div>
-    <div class="about-cols">
-      <div class="about-txt reveal">
-        <p class="lead">도심항공교통(UAM, Urban Air Mobility)은 지상교통 혼잡을 해결하고 3차원 공간을 활용하는 새로운 항공교통체계입니다.</p>
-        <p>㈜에르자인이 운영하는 UAM KOREA는 현직 운송용 조종사, 항공운항관리 박사, 교통공학 기술사 등 항공·건축·교통 분야 전문가가 모인 원팀으로, 정부의 K-UAM 로드맵과 그랜드챌린지 실증에 발맞춰 <strong>UAM 운항·운송 서비스 — 관제·안전 솔루션 — 버티포트 인프라 — 인력 양성</strong>으로 이어지는 도심항공교통 산업의 전 주기를 준비하고 있습니다.</p>
-        <p>우리는 기술 공급자가 아니라 <strong>직접 하늘길을 운항하는 운영자</strong>입니다. 실증기 도입과 시범운항에서 출발해 응급환자 이송(EMS)과 산불 감시·진화 임무를 UAM으로 전환하고, 도서·오지 지역의 항공 공백을 메우는 것을 초기 핵심 사업으로 삼고 있습니다.</p>
-      </div>
-      <ul class="about-list reveal">
-        <li><b>사명</b><span>하늘길의 안전으로 도시의 일상을 바꾼다</span></li>
-        <li><b>비전</b><span>대한민국 UAM 운송사업 대중화 선도기업</span></li>
-        <li><b>초기 핵심사업</b><span>UAM-EMS 응급이송 · 산불 감시/진화 헬기의 UAM 대체</span></li>
-        <li><b>핵심가치</b><span>창의 · 도전 · 성취</span></li>
-        <li><b>사업방향</b><span>운영자 중심 설계 · 핵심기술 국산화 · 안전 최우선</span></li>
-      </ul>
-    </div>
+   <p class="eyebrow">Urban Air Mobility · 2027 Direction</p>
+   <h1 id="hero-title">안전한 하늘길,<br>연구에서 실증 준비까지.</h1>
+   <p class="hero-sub">UAM KOREA는 ㈜에어엑스의 UAM 사업부문입니다.<br>안전 인텔리전스 연구를 바탕으로 응급이송·산불 감시·도서 항공지원의 운항개념을 설계하고, 수요기관 협의와 실증을 준비합니다.</p>
+   <div class="hero-actions"><a class="button primary" href="#missions">2027 사업 방향 <span aria-hidden="true">↓</span></a><a class="button outline" href="#contact">연구·실증 협력 문의 <span aria-hidden="true">↗</span></a></div>
+   <p class="hero-note"><span class="status-dot" aria-hidden="true"></span>현재 단계: 운항개념 연구 · 실증 준비</p>
   </div>
-</section>
-
-<!-- ===== Business : 고정 배경 스크롤 섹션 ===== -->
-<section class="pin-section" id="business">
-  <div class="pin-viewport">
-    <div class="wrap pin-head">
-      <p class="sec-kicker">BUSINESS AREA</p>
-      <div class="pin-progress" aria-hidden="true">
-        <span class="pp-dot" data-i="0">01</span>
-        <span class="pp-dot" data-i="1">02</span>
-        <span class="pp-dot" data-i="2">03</span>
-        <span class="pp-dot" data-i="3">04</span>
-        <span class="pp-dot" data-i="4">05</span>
-      </div>
-    </div>
-
-    <div class="panel" data-i="0">
-      <div class="p-media"><img src="img/hero.jpg" alt="한강 상공을 비행하는 전기 수직이착륙 UAM 기체"></div>
-      <div class="p-body">
-        <p class="p-num">01</p>
-        <h3>UAM 운항<br>여객 · 화물 운송사업</h3>
-        <p class="p-desc">우리는 하늘길을 설계하는 데 그치지 않고 직접 운항합니다. 실증기 도입과 시범운항을 시작으로 여객·화물 운송사업, 도서지역 노선까지 UAM 운항사업의 전 단계를 추진합니다.</p>
-        <ul>
-          <li>실증기 도입 및 시범운항 (실증 · 시범 단계)</li>
-          <li>UAM 여객 운송(에어택시) · 항공 화물 운송사업</li>
-          <li>도서지역 노선 운항 (울릉 · 백령 · 흑산 등)</li>
-          <li>회원제 긴급물류 · 비즈니스 항공 서비스 연계</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="panel" data-i="1">
-      <div class="p-media"><img src="img/ems.jpg" alt="응급 의료 키트를 운반하며 공중에 비행 중인 멀티로터 UAM 기체"></div>
-      <div class="p-body">
-        <p class="p-num">02</p>
-        <h3>UAM-EMS · 산불 대응<br>도서 · 오지 항공지원</h3>
-        <p class="p-desc"><strong>초기 핵심 사업</strong>입니다. 소음과 이착륙 제약에서 자유로운 UAM으로 응급환자 이송(EMS) 체계를 구축하고, 산불 감시·진화 헬기를 UAM으로 대체합니다. 나아가 도서·산간 오지의 항공 공백까지 메웁니다.</p>
-        <ul>
-          <li>UAM 기반 응급환자 이송(EMS) 서비스</li>
-          <li>산불 감시 · 진화 임무의 헬기 → UAM 대체 운용</li>
-          <li>도심형 · 도서형 긴급 물류 서비스</li>
-          <li>도서지역 · 산간 오지 의료 및 생활물자 항공 지원</li>
-          <li>항공선교 · 오지선교 운항 지원 및 물자 수송</li>
-          <li>수색 · 정찰 등 공공 임무 지원 (B2G)</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="panel" data-i="2">
-      <div class="p-media"><img src="img/control.jpg" alt="도심 3D 비행 회랑과 실시간 항적 모니터링 화면이 표시된 고성능 AI 비행 관제 시스템 디스플레이"></div>
-      <div class="p-body">
-        <p class="p-num">03</p>
-        <h3>관제 · 안전<br>솔루션</h3>
-        <p class="p-desc">헬기·민항기 실항적 데이터를 기반으로 회랑의 위험요소를 예측·식별하고, AI 기반 관제 플랫폼으로 하늘길의 안전을 확보합니다.</p>
-        <ul>
-          <li>상황관제 · 회랑교통관제 시스템 (CNSi/UATM)</li>
-          <li>UAM 모니터링 SaaS · 안전관리시스템(SMS) 플랫폼</li>
-          <li>항적 데이터 기반 비행패턴 분석 및 위험 예측</li>
-          <li>핵심기술 국산화 + 국제규격 준수</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="panel" data-i="3">
-      <div class="p-media"><img src="img/vertiport.jpg" alt="노을 진 옥상 버티포트의 탑승 장면"></div>
-      <div class="p-body">
-        <p class="p-num">04</p>
-        <h3>버티포트<br>설계 · 운영</h3>
-        <p class="p-desc">운항이 안정화되는 시점에 맞춰 버티포트 인프라로 사업을 확장합니다. 입지 선정부터 설계·시공, 접근 절차 수립, 지상 운용관리까지 버티포트의 생애 전 주기를 다룹니다.</p>
-        <ul>
-          <li>버티포트 설계(시공) 및 안전관리</li>
-          <li>버티포트 접근 절차 설계 · 검증 (국제규격 기반)</li>
-          <li>권역감시 및 지상 운용관리 · 버티포트 운영사업</li>
-          <li>버티포트 특화형 스마트시티 계획</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="panel" data-i="4">
-      <div class="p-media"><img src="img/education.jpg" alt="국내 대학 강의실에서 노트북을 활용해 수업을 듣는 한국인 학생들과 교수님의 강의 장면"></div>
-      <div class="p-body">
-        <p class="p-num">05</p>
-        <h3>교육 · 연구<br>컨설팅</h3>
-        <p class="p-desc">UAM 조종인력 교육훈련 체계 연구를 학회에 발표해온 연구진이 인력 양성 프로그램과 인증 체계를 개발하고, 정부·지자체의 정책 수립을 지원합니다.</p>
-        <ul>
-          <li>UAM 조종인력 교육훈련 체계 개발</li>
-          <li>UAM 안전 · 서비스 인증 프로그램 개발</li>
-          <li>정부 · 지자체 정책연구 및 학술용역</li>
-          <li>UAM 산업 컨설팅 · 세미나 · 포럼 운영</li>
-        </ul>
-      </div>
-    </div>
+  <div class="wrap hero-bottom"><span>SAFETY FIRST. OPERATIONS IN FOCUS.</span><p>UAM 미래 운용 콘셉트 이미지</p></div>
+ </section>
+ <div class="focus-strip"><ul class="wrap focus-list" aria-label="2027 핵심 방향"><li><span class="index">01</span><div><strong>운항을 목표로</strong><small>공공 임무의 수요·운항여건 검토</small></div></li><li><span class="index">02</span><div><strong>안전 인텔리전스를 기반으로</strong><small>회랑 위험도 · 운항통제 · 안전평가 연구</small></div></li><li><span class="index">03</span><div><strong>기관 협력을 준비하며</strong><small>연구 제안 · 수요기관 협의 · 실증 기획</small></div></li></ul></div>
+ <section class="section" id="about" aria-labelledby="about-title"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">About UAM Korea</p><h2 id="about-title">운항자의 관점으로<br>UAM의 다음 단계를 준비합니다.</h2></div><p class="section-intro">하늘길의 안전으로 도시의 일상을 바꾼다는 사명 아래, 연구와 현장의 요구를 연결합니다.</p></div>
+  <div class="about-grid"><div class="about-copy"><p class="lead">운항·운송 사업을 향한 준비는<br>안전 기준과 공공의 수요에서 시작됩니다.</p><p>UAM KOREA는 ㈜에어엑스 안에서 UAM 운항·운송 분야를 담당하는 사업부문입니다. 에르자인(UAM 추진팀)을 중심으로 운항개념, 안전평가, 연구 기획과 실증 준비를 추진합니다.</p><p>2027년에는 Safety Intelligence(SI) 연구과제 참여 준비와 공공 임무의 사업모델 검토에 집중합니다. 연구수행기록·회의록·산출물 관리를 바탕으로 준비 과정과 결과를 축적합니다.</p></div><dl class="facts"><div><dt>소속</dt><dd>㈜에어엑스 UAM 사업부문</dd></div><div><dt>추진 조직</dt><dd>에르자인(UAM 추진팀)<br>대외 브랜드 UAM KOREA</dd></div><div><dt>중장기 지향</dt><dd>대한민국 UAM 운송사업 대중화 선도</dd></div><div><dt>2027 초점</dt><dd>안전 연구 · 실증 준비 · 수요기관 협의</dd></div><div><dt>핵심 가치</dt><dd>창의 · 도전 · 성취</dd></div></dl></div>
+  <div class="about-end"><p>운항·운송 사업을 목표로, 관제·안전 연구와 정책·교육 협력을 연결합니다.</p><a class="inline-link" href="#roadmap">2027 추진계획 보기 <span aria-hidden="true">↗</span></a></div>
+ </div></section>
+ <section class="section missions" id="missions" aria-labelledby="missions-title"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Public Missions · Operations</p><h2 id="missions-title">가장 필요한 임무부터,<br>실증의 조건을 구체화합니다.</h2></div><p class="section-intro">응급이송, 산불 감시, 도서·오지 항공지원. 2027년에는 임무별 수요와 운항여건을 조사하고, 수요기관 협의와 단계별 실증계획을 준비합니다.</p></div>
+  <div class="mission-grid">
+   <article class="mission"><div class="mission-top"><strong>01 / UAM-EMS</strong><span>운용개념 · 안전평가</span></div><h3>응급이송<br>UAM-EMS</h3><p>응급환자 이송의 임무 프로파일과 취항 전 안전평가 절차를 연구합니다. 소방·의료·지자체의 수요를 바탕으로 운용개념과 사업모델을 검토합니다.</p><details><summary>2027 준비 과업</summary><ul><li>응급이송 운용개념서(안) 작성</li><li>헬기 EMS 자료를 활용한 운용 분석</li><li>수요기관 협의 및 사업모델·원가 초안 검토</li></ul></details></article>
+   <article class="mission"><div class="mission-top"><strong>02 / WILDFIRE</strong><span>감시 임무 · 단계적 접근</span></div><h3>산불 감시·대응<br>실증 준비</h3><p>산불 감시 임무부터 UAM의 적용 가능성을 검토합니다. 산림·소방 기관과의 사전협의, 드론 기반 선행 실증을 통해 다음 단계의 조건을 정리합니다.</p><details><summary>2027 준비 과업</summary><ul><li>산불 감시 임무 실증계획서 준비</li><li>관계기관 사전협의 및 요구사항 정리</li><li>드론 선행 실증과 UAM 적용의 단계 구분</li></ul></details></article>
+   <article class="mission"><div class="mission-top"><strong>03 / REMOTE ACCESS</strong><span>노선 수요 · 운항여건</span></div><h3>도서·오지<br>항공지원</h3><p>응급물류와 항공지원이 필요한 지역의 수요를 조사합니다. 대상 노선의 운항여건을 분석하고, 지역 특성에 맞는 운용 방식과 협력 구조를 검토합니다.</p><details><summary>2027 준비 과업</summary><ul><li>대상 노선의 수요·운항여건 조사</li><li>의료·생활물자 등 응급물류 임무 검토</li><li>기존 항공운송 사업과의 역할 구분</li></ul></details></article>
   </div>
-</section>
-
-<!-- ===== 중간 이미지 밴드 ===== -->
-<section class="band">
-  <div class="band-bg" style="background-image:url('img/sky-band.jpg')"></div>
-  <div class="wrap band-inner reveal">
-    <p>&ldquo;안전의 마지막 보루는 운영자입니다.<br>우리는 운영자의 눈으로 하늘길을 설계하고, 직접 운항합니다.&rdquo;</p>
-  </div>
-</section>
-
-<!-- ===== Projects ===== -->
-<section class="projects" id="projects">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="sec-kicker">PROJECTS &amp; RESEARCH</p>
-      <h2>주요 실적</h2>
-    </div>
-    <ul class="proj-list">
-      <li class="reveal">
-        <span class="proj-year">2026</span>
-        <div>
-          <h4>경기도 도심항공교통(UAM) 산업 기본구상 및 시범사업 추진계획 수립</h4>
-          <p>버티포트 적합지 분석, 권역·노선 설정, 시기별 로드맵 수립 등 광역지자체 UAM 산업 기본구상 용역 수행</p>
-        </div>
-        <span class="proj-tag">정책연구</span>
-      </li>
-      <li class="reveal">
-        <span class="proj-year">2025</span>
-        <div>
-          <h4>도심항공교통 항공안전포럼 개최</h4>
-          <p>서울시 UAM 사업 경과, 드론·무인기 안전관리시스템(SMS) 적용 방안, SMS 플랫폼 시현회 — 공군호텔 서울</p>
-        </div>
-        <span class="proj-tag">포럼</span>
-      </li>
-      <li class="reveal">
-        <span class="proj-year">2023</span>
-        <div>
-          <h4>서울시 도심항공교통 한강유역 항로 안전성 연구</h4>
-          <p>한강 회랑 중심의 항로 안전성 검토 및 서울시 맞춤형 UAM-EMS 구축 연구 착수</p>
-        </div>
-        <span class="proj-tag">연구용역</span>
-      </li>
-      <li class="reveal">
-        <span class="proj-year">2021–23</span>
-        <div>
-          <h4>UAM 체계 · 인력양성 학술연구 4편 발표</h4>
-          <p>저고도 도심 환경 PSM 개념 수립, 조종인력 교육훈련 정립, 교육과목 AHP 분석 등 — 한국항공운항학회 · 한국항공우주학회</p>
-        </div>
-        <span class="proj-tag">학술논문</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== Roadmap ===== -->
-<section class="roadmap" id="roadmap">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="sec-kicker">VISION &amp; ROADMAP</p>
-      <h2>2030년, 하늘길 위의<br>일상을 완성합니다</h2>
-    </div>
-    <ol class="road-grid">
-      <li class="reveal">
-        <em>2025 – 26</em>
-        <h4>실증 · 시범</h4>
-        <p>UAM 실증기 도입 및 시범운항<br>수도권 UAM-EMS 체계 구축<br>산불 감시 임무 실증</p>
-      </li>
-      <li class="reveal">
-        <em>2026 – 27</em>
-        <h4>서비스 확장</h4>
-        <p>기체 추가 도입 · 정기 운항<br>도서지역 응급물류 · 항공선교 지원<br>관제 플랫폼 실증 · 고도화</p>
-      </li>
-      <li class="reveal">
-        <em>2028 – 29</em>
-        <h4>사업 안정화</h4>
-        <p>UAM 운송사업 본격화<br>산불 진화 헬기의 UAM 대체<br>버티포트 운영사업 · 기업 상장(IPO)</p>
-      </li>
-      <li class="reveal">
-        <em>2030 –</em>
-        <h4>글로벌 진출</h4>
-        <p>해외 UAM 인프라 구축 사업<br>오지 · 개발도상국 항공지원 확대<br>K-UAM 표준 · 인증 수출</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ===== Contact ===== -->
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div class="reveal">
-      <p class="sec-kicker">CONTACT</p>
-      <h2>함께 하늘길을<br>열어갈 파트너를 찾습니다</h2>
-      <p class="contact-sub">정부·지자체·공공기관의 정책연구와 실증사업, 기업의 기술 협력 및 투자 제휴를 기다립니다.</p>
-    </div>
-    <ul class="contact-list reveal">
-      <li><b>상호명</b><span>㈜에르자인 (브랜드 : UAM KOREA)</span></li>
-      <li><b>대표자</b><span>이재욱</span></li>
-      <li><b>주소</b><span>경기도 성남시 수정구 산성대로283번길 6-17, 3층 (신흥동)</span></li>
-      <li><b>이메일</b><span><a href="mailto:myhero.lee@gmail.com">myhero.lee@gmail.com</a></span></li>
-      <li><b>대표전화</b><span><a href="tel:02-6083-0020">02-6083-0020</a></span></li>
-      <li><b>대표자 연락처</b><span><a href="tel:010-5833-4897">010-5833-4897</a></span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <a href="#top" class="logo logo-ft">
-      <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><rect width="32" height="32" fill="#fff" opacity="0.1"/><path d="M16 5 L27 27 L16 21 L5 27 Z" fill="#FF5A1F"/></svg>
-      <span>UAM&nbsp;<b>KOREA</b></span>
-    </a>
-    <p>㈜에르자인 · 대표 이재욱 · 경기도 성남시 수정구 산성대로283번길 6-17, 3층 (신흥동) · 02-6083-0020</p>
-    <p class="copyright">© 2026 AIRZAYIN Co., Ltd. (UAM KOREA). All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <div class="mission-bottom"><b>실증 준비 단계</b><p>현재 기체 도입과 운항증명 취득 전 단계입니다. 실제 운항은 기체·인증·안전성·관계기관 협의 등 선행 조건을 검토한 뒤 단계적으로 추진합니다.</p></div>
+ </div></section>
+ <section class="section research dark" id="research" aria-labelledby="research-title"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Safety Intelligence</p><h2 id="research-title">안전 데이터를<br>운항의 판단 기준으로.</h2></div><p class="section-intro">Safety Intelligence(SI)는 운항·안전 정보를 연결해 의사결정에 활용하는 접근입니다. UAM 운항자의 관점에서 위험을 이해하고 판단하는 기준과 방법을 연구합니다.</p></div>
+  <div class="research-feature"><figure class="research-image"><img src="img/control.jpg" alt="도시 회랑과 운항정보를 함께 살피는 관제 환경의 콘셉트 이미지" width="1200" height="900" loading="lazy"><figcaption>관제·안전 연구의 지향점을 표현한 콘셉트 이미지</figcaption></figure><div><p class="research-topline">2027 연구 방향</p><h3>회랑 위험도와 운항통제,<br>안전 인텔리전스를 연결합니다.</h3><p class="body">국가 R&amp;D 참여와 통합 SI 플랫폼 후속 연구를 준비하며, 회랑·운항정보·비정상 상황 시나리오를 운항 의사결정의 관점에서 구체화합니다.</p><ul class="research-list"><li><span class="n">01</span><div><strong>위험도 기반 회랑·안전평가</strong><p>회랑의 위해요인, 운항여건과 취항 전 안전평가 기준 연구</p></div></li><li><span class="n">02</span><div><strong>운항통제·운항자 SMS·SI</strong><p>운항정보와 비정상 상황을 연결한 안전관리·판단 절차 연구</p></div></li><li><span class="n">03</span><div><strong>운항 SI D3M · UAM 시나리오</strong><p>노선별 위해요인·결심 카드의 요구 정의와 운항 분야 내용 검수</p></div></li></ul></div></div>
+  <div class="research-support"><div><span class="small-label">POLICY &amp; DEMONSTRATION</span><h3>정책연구·시범사업 기획</h3><p>서울·경기 연구 경험을 바탕으로 지자체 UAM 정책과 시범사업 기획을 지원합니다. 공공 임무의 수요, 지역 여건, 안전 요구사항을 함께 검토합니다.</p></div><div><span class="small-label">TRAINING &amp; ACADEMIA</span><h3>교육훈련·학술 협력</h3><p>조종·운항관리 인력의 역량과 교육과정을 연구합니다. 위협·오류관리(TEM), 역량기반 교육훈련(CBTA), 안전평가 연구를 세미나·학술발표로 연결합니다.</p></div></div>
+  <p class="role-note">통합상황실과 역할을 나눕니다. UAM 추진팀은 운항 분야 요구 정의와 내용 검수를 담당하고, 콘솔·분석 서버 개발은 통합상황실에서 수행합니다.</p>
+ </div></section>
+ <section class="section" id="roadmap" aria-labelledby="roadmap-title"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">2027 Roadmap</p><div class="roadmap-heading"><h2 id="roadmap-title">실증을 향한<br>준비의 순서.</h2><span class="pill">2027 추진계획(안)</span></div></div><p class="section-intro">연구 제안과 수요기관 협의에서 출발해 운용개념·안전평가·실증계획으로 이어갑니다. 각 단계의 산출물로 다음 단계의 판단 근거를 만듭니다.</p></div>
+  <ol class="road-grid"><li><span class="quarter">2027 / 1분기</span><h3>연구 제안과<br>기관 협의</h3><p>SI 후속 연구 제안<br>R&amp;D 컨소시엄 참여 협의<br>응급이송 수요기관 첫 협의</p><div class="road-deliver"><b>주요 준비 산출물</b>연구 제안서 · 요구사항 정리</div></li><li><span class="quarter">2027 / 2분기</span><h3>운용개념과<br>실증계획 초안</h3><p>UAM-EMS 운용개념 초안<br>산불 감시 실증계획 준비<br>도서 노선 수요·여건 조사</p><div class="road-deliver"><b>주요 준비 산출물</b>운용개념서(안) · 조사 결과</div></li><li><span class="quarter">2027 / 3분기</span><h3>안전평가와<br>도입 여건 검토</h3><p>안전평가·교육과정 중간 정리<br>수요기관 협의 문서화<br>실증기 도입 방식·인증 경로 검토</p><div class="road-deliver"><b>주요 준비 산출물</b>연구 중간 산출물 · 도입 검토서</div></li><li><span class="quarter">2027 / 4분기</span><h3>성과 공유와<br>다음 단계 기획</h3><p>연구성과·연차 실적 정리<br>항공안전포럼·학술발표 추진<br>2028년 사업계획 수립</p><div class="road-deliver"><b>주요 준비 산출물</b>연간 보고 · 후속 사업계획</div></li></ol>
+  <p class="road-note">위 일정은 추진계획이며, 과제 공고·선정 결과와 수요기관 협의 여건에 따라 조정됩니다.</p>
+  <div class="future"><b>중장기 확장 방향</b><p>UAM 운항·운송 사업화를 지향합니다. 기체 도입·인증·안전관리 등 선행 조건을 검토하고, 운항 기반이 갖춰지는 단계에 맞춰 버티포트 인프라와 운영 연계를 준비합니다.</p></div>
+ </div></section>
+ <section class="section history" id="history" aria-labelledby="history-title"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Research Foundation</p><h2 id="history-title">축적된 연구가<br>다음 운항의 바탕이 됩니다.</h2></div><p class="section-intro">㈜에어엑스와 참여 연구진의 연구·용역·학술 활동을 기반으로, UAM 운항과 안전에 필요한 지식을 이어갑니다.</p></div>
+  <ul class="history-list"><li><time>2025.06 – 2026.04</time><div><h3>경기도 UAM 산업 기본구상 및 시범사업 추진계획 수립 연구</h3><p>㈜에어엑스 연구용역 · 지역 UAM 정책과 시범사업 기획 기반</p></div><span class="type">연구용역</span></li><li><time>2025</time><div><h3>도심항공교통 항공안전포럼</h3><p>항공안전 논의 및 안전관리시스템(SMS) 플랫폼 시현</p></div><span class="type">포럼</span></li><li><time>2023.12 – 2024.11</time><div><h3>서울시 UAM 한강유역 항로안정성 연구</h3><p>㈜에어엑스 연구용역 · 한강유역 UAM 항로와 운항 안전 연구</p></div><span class="type">연구용역</span></li><li><time>2021 – 2023</time><div><h3>UAM 체계·인력양성 학술연구</h3><p>참여 연구진 학술연구 4편 · 저고도 도심 환경과 조종인력 교육훈련 등</p></div><span class="type">학술연구</span></li></ul>
+  <p class="history-note">과거 연구·용역과 연구진의 학술 활동을 구분해 정리했습니다. 2027년 추진 과업은 위 실적과 별도의 계획입니다.</p>
+ </div></section>
+ <section class="section contact dark" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">Work With UAM Korea</p><h2 id="contact-title">필요한 임무와<br>안전한 하늘길을<br>함께 논의합니다.</h2><p class="contact-text">지자체·소방·산림·의료기관의 공공 임무, 연구기관·대학·기업의 공동 연구와 실증 기획을 기다립니다. 필요한 임무와 지역, 협력 주제를 알려주세요.</p><div class="contact-topics"><a href="mailto:satbq@naver.com?subject=UAM%20KOREA%20%EC%97%B0%EA%B5%AC%C2%B7R%26D%20%ED%98%91%EB%A0%A5%20%EB%AC%B8%EC%9D%98"><div><span>01</span>안전 연구 · R&amp;D 협력</div><span aria-hidden="true">↗</span></a><a href="mailto:satbq@naver.com?subject=UAM%20KOREA%20%EA%B3%B5%EA%B3%B5%20%EC%9E%84%EB%AC%B4%C2%B7%EC%8B%A4%EC%A6%9D%20%EA%B8%B0%ED%9A%8D%20%EB%AC%B8%EC%9D%98"><div><span>02</span>공공 임무 · 실증 기획</div><span aria-hidden="true">↗</span></a><a href="mailto:satbq@naver.com?subject=UAM%20KOREA%20%EC%A0%95%EC%B1%85%C2%B7%EA%B5%90%EC%9C%A1%20%EC%97%B0%EA%B5%AC%20%EB%AC%B8%EC%9D%98"><div><span>03</span>정책 · 교육 · 학술 연구</div><span aria-hidden="true">↗</span></a></div><p class="email-hint">문의 항목을 선택하면 이메일 앱이 열립니다.</p></div><dl class="facts"><div><dt>소속</dt><dd>㈜에어엑스 UAM 사업부문<small>에르자인(UAM 추진팀) · UAM KOREA</small></dd></div><div><dt>사업 문의</dt><dd><a href="mailto:satbq@naver.com">satbq@naver.com</a><small>사업담당 최지헌 교수</small></dd></div><div><dt>대표 이메일</dt><dd><a href="mailto:myhero.lee@gmail.com">myhero.lee@gmail.com</a></dd></div><div><dt>대표전화</dt><dd><a href="tel:0260830020">02-6083-0020</a></dd></div><div><dt>주소</dt><dd>충청북도 충주시 대소원면 대학로 50<br>한국교통대학교 창업보육센터 408호</dd></div><div><dt>대표이사</dt><dd>이재욱</dd></div></dl></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#top" aria-label="UAM KOREA 첫 화면"><svg viewBox="0 0 32 34" aria-hidden="true"><path fill="#ff5a1f" d="M16 2 30 32 16 24 2 32Z"/></svg><div class="brand-word"><span>UAM</span> <b>KOREA</b></div></a><p>㈜에어엑스 · UAM 사업부문 · 대표이사 이재욱 · 사업자등록번호 793-87-02912<br>충청북도 충주시 대소원면 대학로 50, 한국교통대학교 창업보육센터 408호</p><p class="copyright">© 2026 AIR-X Co., Ltd. · UAM KOREA. All rights reserved.</p></div><a class="back" href="#top">맨 위로 ↑</a></div></footer>
+<script>
+(function(){
+ 'use strict';
+ var header=document.getElementById('siteHeader');
+ var button=document.getElementById('menuBtn');
+ var nav=document.getElementById('gnb');
+ var mobile=window.matchMedia('(max-width: 900px)');
+ function setMenu(open){
+  header.dataset.open=String(open);
+  button.setAttribute('aria-expanded',String(open));
+  button.setAttribute('aria-label',open?'메뉴 닫기':'메뉴 열기');
+ }
+ button.addEventListener('click',function(){setMenu(button.getAttribute('aria-expanded')!=='true')});
+ nav.addEventListener('click',function(event){if(event.target.closest('a'))setMenu(false)});
+ document.addEventListener('keydown',function(event){if(event.key==='Escape'&&button.getAttribute('aria-expanded')==='true'){setMenu(false);button.focus()}});
+ document.addEventListener('click',function(event){if(!header.contains(event.target))setMenu(false)});
+ function updateViewport(){if(!mobile.matches)setMenu(false)}
+ if(mobile.addEventListener)mobile.addEventListener('change',updateViewport);else mobile.addListener(updateViewport);
+ setMenu(false);
+})();
+</script>
 </body>
 </html>
